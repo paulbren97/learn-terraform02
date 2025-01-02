@@ -8,7 +8,7 @@ provider "aws" {
 
 resource "aws_instance" "app_server" {
   ami           = "ami-01816d07b1128cd2d"
-  instance_type = "t2.medium"
+  instance_type = "t2.small"
 
   tags = {
     Name = "ExampleAppServerInstance"
